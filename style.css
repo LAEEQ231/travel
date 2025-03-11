@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.icon {
+    width: 200px;
+    height: 70px;
+}
+
+.logo {
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.menu {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+ul li {
+    margin: 0 20px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #ff7200;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.srch {
+    font-family: 'Poppins', sans-serif;
+    width: 240px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.srch::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.srch:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    width: 100px;
+    height: 45px;
+    background: linear-gradient(45deg, #ff7200, #ff9500);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(255, 114, 0, 0.3);
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #ff9500, #ff7200);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 114, 0, 0.5);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.content {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+
+.content .par {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cnn {
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    transition: 0.4s ease;
+}
+
+.content .cnn:hover {
+    background-color: rgb(48, 50, 50); /* This will apply the hover effect */
+}
+
+.content .cnn a {
+    text-decoration: none;
+    color: rgb(48, 50, 50);
+    transition: 0.3s ease; /* Add transition for the link color change */
+}
+
+.content .cnn:hover a {
+    color: #ff7200; /* Change the color of the text inside the button when hovering */
+}
